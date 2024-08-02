@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    background-color: rgb(163, 158, 158);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "EB Garamond", serif;
+}
+
+.card {
+    background-color: white;
+    width: 80vw;
+    max-width: 350px;
+    height: 95vh;
+    margin-top: 20px;
+    border: 1px solid rgb(102, 99, 99);
+    border-radius: 15px;
+    box-shadow: 1px 5px 15px;
+    padding: 15px;
+}
+
+.pic {
+    height: 200px;
+    background-color: black;
+    background-image: url(TYBSc.C.S..jpg);
+    background-size:cover;
+    border: 1px solid goldenrod;
+    border-radius: 10px;
+    box-shadow: 1px 5px 15px rgb(190, 142, 19);
+}
+
+.content {
+    height: 55vh;
+    max-height: 600px;
+    margin-top: 20px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid gold;
+    box-shadow:inset 1px 5px 20px rgb(190, 142, 19);
+    border-radius: 10px;
+}
+
+.content p {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.content p:nth-child(3) {
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+.content p:nth-child(1) {
+    margin-top: 1px;
+}
+
+.cred {
+    text-align: end;
+    font-size: 12px;
+    margin-top: 2px;
+    font-style: italic;
+}
+
+#play-button {
+    font-family: "EB Garamond", serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: 1s ease;
+}
+#play-button:hover {
+    background-color: #000000e5;
+    box-shadow: 1px 0px 30px red, 1px 0px 30px orange, 1px 0px 30px yellow;
+}

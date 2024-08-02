@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="card">
+        <div class="pic">
+        </div>
+
+        <div class="content">
+            <p>Hey Classmates, 🎓
+                Remember those awesome days when we were just 15 of us ruling the campus? From the first lecture to the
+                last exam, we made every moment unforgettable. Whether it was bunking classes together, those impromptu
+                trips 🌄, or just chilling in the cafeteria 🍕, we turned every moment into an adventure.</p>
+            <p>
+                The laughter 😂, the arguments 🤔, the endless fun 🎉 we truly had a blast together. We were more than
+                just classmates; we were a family 👨‍👩‍👧‍👦. And even though we've gone our separate ways, the bond we
+                share and the memories we've created will always keep us connected 💖. Here’s to the crazy, fun, and
+                irreplaceable time we had 🥳 cheers to us! 🥂
+                Stay awesome, and let’s make sure to catch up soon! 📅
+            </p>
+            <p>
+                "College ke din hamesha yaad aayenge 😊, yeh lamhe hamesha muskurane pe majboor kar denge 😄."
+            </p>
+            <div class="btn">
+                <button id="play-button">Click Me!</button>
+            </div>
+        </div>
+
+        <div class="cred">
+            Made with💖by Pranav...
+        </div>
+    </div>
+
+    <div class="song">
+        <audio id="background-music"
+            src="Y2meta.app - Yaadon ke purane album mein,~यादों के पुराने एल्बम में~Woh Din~, Best Video Status... (192 kbps).mp3"></audio>
+    </div>
+
+    <!-- Confetti.js script -->
+    <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.18/dist/index.min.js"></script>
+
+    <script>
+        document.getElementById('play-button').addEventListener('click', function () {
+            var audio = document.getElementById('background-music');
+            audio.play();
+
+            // Create confetti settings
+            var confettiSettings = { target: 'confetti-canvas' };
+            var confetti = new ConfettiGenerator(confettiSettings);
+            confetti.render();
+        });
+    </script>
+
+    <!-- Create a canvas for confetti -->
+    <canvas id="confetti-canvas"
+        style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none;"></canvas>
+</body>
+
+</html>
