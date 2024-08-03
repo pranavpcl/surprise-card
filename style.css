@@ -26,6 +26,7 @@ body {
     background-color: black;
     background-image: url(TYBSc.C.S..jpg);
     background-size:cover;
+    background-repeat: no-repeat;
     border: 1px solid goldenrod;
     border-radius: 10px;
     box-shadow: 1px 5px 15px rgb(190, 142, 19);
@@ -33,7 +34,7 @@ body {
 
 .content {
     height: 55vh;
-    max-height: 600px;
+    max-height: 800px;
     margin-top: 20px;
     padding: 5px;
     text-align: center;
